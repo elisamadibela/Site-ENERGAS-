@@ -32,10 +32,8 @@
       padding: 20px 0;
     }
 
-    header .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    header .logo h1 {
+      color: white;
     }
 
     nav ul {
@@ -72,18 +70,20 @@
       text-align: center;
     }
 
-    .btn {
+    .btn, .btn-whatsapp {
       display: inline-block;
-      padding: 10px 20px;
-      background: #333;
+      padding: 12px 24px;
+      background: #25D366;
       color: #fff;
       text-decoration: none;
-      margin-top: 20px;
       border-radius: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
-    .btn:hover {
-      background: #555;
+    .btn:hover, .btn-whatsapp:hover {
+      background: #1ebd57;
     }
 
     section {
@@ -108,6 +108,18 @@
       font-size: 30px;
       margin-bottom: 10px;
       color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .contact-details p {
@@ -179,15 +191,14 @@
     <div class="container">
       <h2>Sua Segurança e Conforto em Gás é Nossa Prioridade!</h2>
       <p>Especialistas em instalação e manutenção de sistemas a gás para sua casa ou empresa.</p>
-      <a href="#contato" class="btn">Solicite um Orçamento</a>
+      <a href="https://wa.me/5511917898448" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp</a>
     </div>
   </section>
 
   <section id="sobre">
     <div class="container">
       <h2>Sobre a Energas Company</h2>
-      <p>Na Energas Company, somos dedicados a oferecer soluções seguras e eficientes em sistemas de gás e aquecedores. Com anos de experiência no mercado, nossa equipe é altamente qualificada para garantir a tranquilidade e o conforto que você e sua família merecem. Trabalhamos com os mais altos padrões de qualidade e segurança.</p>
-      <p>Nossa missão é fornecer serviços de excelência, com agilidade e transparência, sempre buscando a satisfação total dos nossos clientes.</p>
+      <p>Na Energas Company, somos dedicados a oferecer soluções seguras e eficientes em sistemas de gás e aquecedores. Com anos de experiência no mercado, nossa equipe é altamente qualificada para garantir a tranquilidade e o conforto que você e sua família merecem.</p>
     </div>
   </section>
 
@@ -197,33 +208,23 @@
       <div class="service-list">
         <div class="service-item">
           <i class="fas fa-gas-pump"></i>
-          <h3>Conversão de Gás (Botijão para Encanado)</h3>
-          <p>Realizamos a conversão segura e eficiente do seu fogão de botijão para gás encanado, otimizando seu espaço e proporcionando maior praticidade.</p>
-        </div>
-        <div class="service-item">
-          <i class="fas fa-undo-alt"></i>
-          <h3>Conversão de Gás (Encanado para Botijão)</h3>
-          <p>Caso precise retornar ao sistema de botijão, nossa equipe faz a reversão com toda a segurança necessária.</p>
+          <h3>Conversão de Gás</h3>
+          <p>De botijão para gás encanado, ou vice-versa, com total segurança.</p>
         </div>
         <div class="service-item">
           <i class="fas fa-search"></i>
-          <h3>Caça Vazamento de Gás</h3>
-          <p>Utilizamos tecnologia de ponta para detectar e corrigir vazamentos de gás, garantindo a segurança do seu ambiente.</p>
+          <h3>Caça Vazamento</h3>
+          <p>Detectamos e corrigimos vazamentos com precisão.</p>
         </div>
         <div class="service-item">
           <i class="fas fa-vial"></i>
-          <h3>Teste de Estanqueidade de Tubulação</h3>
-          <p>Realizamos testes rigorosos para verificar a integridade da sua tubulação de gás, prevenindo futuros problemas.</p>
+          <h3>Teste de Estanqueidade</h3>
+          <p>Verificamos a integridade das tubulações de gás.</p>
         </div>
         <div class="service-item">
           <i class="fas fa-thermometer-half"></i>
-          <h3>Instalação e Manutenção de Aquecedor</h3>
-          <p>Instalamos e fazemos a manutenção preventiva e corretiva de aquecedores a gás, assegurando água quente sempre que precisar.</p>
-        </div>
-        <div class="service-item">
-          <i class="fas fa-tools"></i>
-          <h3>Adequação de Ponto de Gás</h3>
-          <p>Adequamos pontos de gás para atender às suas necessidades, seja para novos equipamentos ou reformas, sempre seguindo as normas de segurança.</p>
+          <h3>Instalação de Aquecedor</h3>
+          <p>Serviço completo de instalação e manutenção.</p>
         </div>
       </div>
     </div>
@@ -232,7 +233,12 @@
   <section id="galeria">
     <div class="container">
       <h2>Galeria de Imagens</h2>
-      <p>Imagens indisponíveis.</p>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1581090700227-1a7c8c1607d7?auto=format&fit=crop&w=800&q=80" alt="Instalação de gás">
+        <img src="https://images.unsplash.com/photo-1580910051073-9f1573c23f97?auto=format&fit=crop&w=800&q=80" alt="Manutenção de tubulação">
+        <img src="https://images.unsplash.com/photo-1580910365200-f83f31c7b18b?auto=format&fit=crop&w=800&q=80" alt="Aquecedor">
+        <img src="https://images.unsplash.com/photo-1611733127896-197f7d34bb27?auto=format&fit=crop&w=800&q=80" alt="Equipamento de segurança">
+      </div>
     </div>
   </section>
 
@@ -244,31 +250,6 @@
         <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> <a href="tel:+5511917898448">(11) 91789-8448</a></p>
         <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/5511917898448" target="_blank">(11) 91789-8448</a></p>
         <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:contato@energascompany.com.br">contato@energascompany.com.br</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Brás - São Paulo/SP</p>
-        <p class="map-link"><a href="https://www.google.com/maps/place/Brás,+São+Paulo+-+SP" target="_blank">Ver no Google Maps</a></p>
-      </div>
-
-      <div class="contact-form-container">
-        <h3>Envie sua Mensagem</h3>
-        <form action="#" method="POST">
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" required>
-          </div>
-          <div class="form-group">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
       </div>
     </div>
   </section>
