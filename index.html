@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energas Company - Soluções em Gás e Aquecedores</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-header {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .hero-section {
+      background: #555;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #555;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-item {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service-item i {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact-details p {
+      margin: 10px 0;
+    }
+
+    .contact-form-container form {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+
+    .social-footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .social-footer a:hover {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <h1>Energas Company</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="contact-header">
+      <a href="tel:+5511917898448"><i class="fas fa-phone"></i> (11) 91789-8448</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <h2>Sua Segurança e Conforto em Gás é Nossa Prioridade!</h2>
+      <p>Especialistas em instalação e manutenção de sistemas a gás para sua casa ou empresa.</p>
+      <a href="#contato" class="btn">Solicite um Orçamento</a>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre a Energas Company</h2>
+      <p>Na Energas Company, somos dedicados a oferecer soluções seguras e eficientes em sistemas de gás e aquecedores. Com anos de experiência no mercado, nossa equipe é altamente qualificada para garantir a tranquilidade e o conforto que você e sua família merecem. Trabalhamos com os mais altos padrões de qualidade e segurança.</p>
+      <p>Nossa missão é fornecer serviços de excelência, com agilidade e transparência, sempre buscando a satisfação total dos nossos clientes.</p>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <i class="fas fa-gas-pump"></i>
+          <h3>Conversão de Gás (Botijão para Encanado)</h3>
+          <p>Realizamos a conversão segura e eficiente do seu fogão de botijão para gás encanado, otimizando seu espaço e proporcionando maior praticidade.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-undo-alt"></i>
+          <h3>Conversão de Gás (Encanado para Botijão)</h3>
+          <p>Caso precise retornar ao sistema de botijão, nossa equipe faz a reversão com toda a segurança necessária.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-search"></i>
+          <h3>Caça Vazamento de Gás</h3>
+          <p>Utilizamos tecnologia de ponta para detectar e corrigir vazamentos de gás, garantindo a segurança do seu ambiente.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-vial"></i>
+          <h3>Teste de Estanqueidade de Tubulação</h3>
+          <p>Realizamos testes rigorosos para verificar a integridade da sua tubulação de gás, prevenindo futuros problemas.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-thermometer-half"></i>
+          <h3>Instalação e Manutenção de Aquecedor</h3>
+          <p>Instalamos e fazemos a manutenção preventiva e corretiva de aquecedores a gás, assegurando água quente sempre que precisar.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-tools"></i>
+          <h3>Adequação de Ponto de Gás</h3>
+          <p>Adequamos pontos de gás para atender às suas necessidades, seja para novos equipamentos ou reformas, sempre seguindo as normas de segurança.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="container">
+      <h2>Galeria de Imagens</h2>
+      <p>Imagens indisponíveis.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Para orçamentos, dúvidas ou agendamentos, entre em contato conosco:</p>
+      <div class="contact-details">
+        <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> <a href="tel:+5511917898448">(11) 91789-8448</a></p>
+        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/5511917898448" target="_blank">(11) 91789-8448</a></p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:contato@energascompany.com.br">contato@energascompany.com.br</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Brás - São Paulo/SP</p>
+        <p class="map-link"><a href="https://www.google.com/maps/place/Brás,+São+Paulo+-+SP" target="_blank">Ver no Google Maps</a></p>
+      </div>
+
+      <div class="contact-form-container">
+        <h3>Envie sua Mensagem</h3>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Energas Company. Todos os direitos reservados.</p>
+    <div class="social-footer">
+      <a href="https://www.facebook.com/energascompany" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/energascompany" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/energascompany" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
